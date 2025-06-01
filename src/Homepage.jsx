@@ -678,6 +678,26 @@ export default function Homepage() {
         </Marquee>
         <div className="educationsection">
           <div className="educationcard">
+            <div className="educationimage img11"></div>
+            <div className="educationdetails">
+              <div className="educationhead">
+                Steel Authority of India Limited
+              </div>
+              <div className="educationcollege">May 2025 - June 2025</div>
+              <div className="educationcollege">
+                Completed a hands-on summer internship in the Telecom Department
+                at Bhilai Steel Plant, where I worked on the maintenance and
+                optimization of internal communication systems. Gained practical
+                experience with industrial telecom infrastructure, including
+                EPABX systems, fiber optic networks, and wireless communication
+                setups critical to plant operations.
+              </div>
+              <div className="educationsession">
+                Summer Intern | Telecom Dept
+              </div>
+            </div>
+          </div>
+          <div className="educationcard">
             <div className="educationimage img3"></div>
             <div className="educationdetails">
               <div className="educationhead">Automate Vellore</div>
@@ -751,6 +771,25 @@ export default function Homepage() {
         </Marquee>
         <div className="educationsection">
           <div className="educationcard">
+            <div className="educationimage imgach4"></div>
+            <div className="educationdetails">
+              <div className="educationhead">Women Techies 25 - Best UI UX</div>
+              <div className="educationcollege">
+                Organized by Google Developers Student Club at VIT Vellore
+              </div>
+              <div className="educationcollege">
+                Built Keyper, a third-party plug-and-play authentication system
+                that allows developers to integrate secure user login with just
+                a single API call—no additional setup required. Designed with a
+                strong focus on simplicity and user experience, Keyper was
+                awarded Best UI/UX at the GDSC Women Techies Hackathon for its
+                intuitive design, seamless developer onboarding, and visually
+                polished interface.
+              </div>
+              <div className="educationsession"></div>
+            </div>
+          </div>
+          <div className="educationcard">
             <div className="educationimage imgach1"></div>
             <div className="educationdetails">
               <div className="educationhead">
@@ -806,10 +845,9 @@ export default function Homepage() {
               <div className="educationcollege">
                 Secured 1st place in the Relay Coding competition organized by
                 the Institute of Engineering and Technology, VIT Vellore.
-                Developed a **Student Community Platform** where students can
-                create **study groups**, collaborate, and organize meetups for
-                group study sessions, enhancing peer learning and academic
-                engagement.
+                Developed a Student Community Platform where students can create
+                study groups, collaborate, and organize meetups for group study
+                sessions, enhancing peer learning and academic engagement.
               </div>
               <div className="educationsession">
                 <a

@@ -964,6 +964,11 @@ body{
     background-position: center;
     background-size: cover;
 }
+.img11{
+    background: url('/saillogo.jpg');
+    background-position: center;
+    background-size: cover;
+}
 .img4{
     background: url('/tripsterlogo.png');
     background-position: center;
@@ -1352,6 +1357,11 @@ body{
     }
     .imgach3{
         background: url('/ietvit.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+    .imgach4{
+        background: url('/gdsclogo.jpg');
         background-position: center;
         background-size: cover;
     }
@@ -2761,6 +2771,7 @@ body{
     overflow: hidden;
     margin-top: 80px;
 }
+
 .logoimg1{
     width: 50%;
     height: 100%;
