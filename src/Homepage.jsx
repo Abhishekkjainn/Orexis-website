@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import Marquee from 'react-fast-marquee';
-import $ from 'jquery';
-import CircleType from 'circletype';
-import { FaStarOfLife, FaCircle } from 'react-icons/fa';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import React, { useEffect, useRef } from "react";
+import Marquee from "react-fast-marquee";
+import $ from "jquery";
+import CircleType from "circletype";
+import { ImSpades } from "react-icons/im";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Homepage() {
   const rotatedRef = useRef(null);
@@ -16,11 +16,11 @@ export default function Homepage() {
     $(window).scroll(function () {
       var offset = $(window).scrollTop();
       offset = offset * 0.5;
-      $('.circular-text').css({
-        '-moz-transform': 'rotate(' + offset + 'deg)',
-        '-webkit-transform': 'rotate(' + offset + 'deg)',
-        '-o-transform': 'rotate(' + offset + 'deg)',
-        '-ms-transform': 'rotate(' + offset + 'deg)',
+      $(".circular-text").css({
+        "-moz-transform": "rotate(" + offset + "deg)",
+        "-webkit-transform": "rotate(" + offset + "deg)",
+        "-o-transform": "rotate(" + offset + "deg)",
+        "-ms-transform": "rotate(" + offset + "deg)",
       });
     });
   }, []);
@@ -29,22 +29,20 @@ export default function Homepage() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>
-          Abhishek Jain | Web Developer | Cross Platform Application Developer |
-          Portfolio
-        </title>
+        <title>Orexis</title>
       </Helmet>
       <Circulartext />
       <Page1 />
-      <Page2 />
-      <Page3 />
-      <Page4 />
-      <Page5 />
-      <Page6 />
-      <Page7 />
-      <Page8 />
-      <Page10 />
-      <Page9 />
+      {/* <Page2 /> */}
+      {/* <Page3 /> */}
+      {/* <Page4 /> */}
+      <Page11 />
+      {/* <Page5 /> */}
+      {/* <Page6 /> */}
+      {/* <Page7 /> */}
+      {/* <Page8 /> */}
+      {/* <Page10 /> */}
+      {/* <Page9 /> */}
     </>
   );
 
@@ -53,12 +51,12 @@ export default function Homepage() {
       <>
         <div className="circular-text">
           <span id="rotated" ref={rotatedRef}>
-            Web Developer | Flutter App Developer | Database Management |
-            Version Control |
+            Glacial reallm | Glacial reallm | Glacial reallm | Glacial reallm |
+            Glacial reallm |
           </span>
         </div>
         <div className="arrow">
-          <img src="mainlogo2.png" alt="mainlogo" className="centercircle" />
+          <img src="/spade.png" alt="mainlogo" className="centercircle" />
         </div>
       </>
     );
@@ -70,66 +68,75 @@ export default function Homepage() {
         <div className="marqueepage1">
           <Marquee className="namemarquee" speed={40} loop={0}>
             &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
-            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
+            <ImSpades /> &nbsp; OREXIS &nbsp;
           </Marquee>
         </div>
         <div className="imagepage1">
-          <img src="/abhishek.png" alt="abhishek" className="abhishekimage" />
+          <img src="/IMG_0605.JPG" alt="abhishek" className="abhishekimage" />
         </div>
       </div>
     );
@@ -145,34 +152,40 @@ export default function Homepage() {
           loop={0}
           direction="right"
         >
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
-          <FaStarOfLife /> &nbsp; About Me &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
+          <ImSpades /> &nbsp; About Team &nbsp;
         </Marquee>
 
         <div className="aboutmesection">
           <div className="aboutmecontent">
             Hi, I’m a <span className="blue">Full Stack Web Developer</span>,
-            <span className="blue">API Specialist</span>, and{' '}
+            <span className="blue">API Specialist</span>, and{" "}
             <span className="blue">Cross-Platform App Developer 📱</span>. With
-            nearly three years of experience, I’ve built{' '}
-            <span className="blue">websites 🌍</span> and{' '}
+            nearly three years of experience, I’ve built{" "}
+            <span className="blue">websites 🌍</span> and{" "}
             <span className="blue">mobile apps 📲</span> that deliver seamless,
             high-performance user experiences.
             <br />
             <br />
-            When I’m not coding, I’m contributing to{' '}
+            When I’m not coding, I’m contributing to{" "}
             <span className="blue">open-source projects 🚀</span>, automating
             tasks, and championing <span className="blue">dark mode</span> as
             the true UI theme. 🌙
@@ -182,7 +195,7 @@ export default function Homepage() {
             creativity, and efficiency.
           </div>
 
-          <Link to={'/about'} className="linkstyle">
+          <Link to={"/about"} className="linkstyle">
             <div className="resumebutton">
               <div className="circlebutton"></div>
               <div className="buttonhead">About Me</div>
@@ -203,13 +216,13 @@ export default function Homepage() {
           loop={0}
           direction="left"
         >
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
-          <FaStarOfLife /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
+          <ImSpades /> &nbsp; Expertise &nbsp;
         </Marquee>
         <div className="skillsection">
           <div className="skilldiv skilldiv1">
@@ -230,7 +243,7 @@ export default function Homepage() {
 
             <div className="bottomskilldiv">
               <Link
-                to={'/services/webdeveloper'}
+                to={"/services/webdeveloper"}
                 className="bottomskilldiv linkstyle"
               >
                 <div className="infobutton">Get More Info</div>
@@ -253,7 +266,7 @@ export default function Homepage() {
             </div>
             <div className="bottomskilldiv">
               <Link
-                to={'/services/appdeveloper'}
+                to={"/services/appdeveloper"}
                 className="bottomskilldiv linkstyle"
               >
                 <div className="infobutton">Get More Info</div>
@@ -276,7 +289,7 @@ export default function Homepage() {
             </div>
             <div className="bottomskilldiv">
               <Link
-                to={'/services/uiuxdesigner'}
+                to={"/services/uiuxdesigner"}
                 className="bottomskilldiv linkstyle"
               >
                 <div className="infobutton">Get More Info</div>
@@ -294,19 +307,19 @@ export default function Homepage() {
     useEffect(() => {
       const handleScroll = () => {
         const page4 = page4Ref.current;
-        const projectDivs = page4.querySelectorAll('.projectdiv');
+        const projectDivs = page4.querySelectorAll(".projectdiv");
         const rect = page4.getBoundingClientRect();
 
         if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
-          projectDivs.forEach((div) => div.classList.add('sticky'));
+          projectDivs.forEach((div) => div.classList.add("sticky"));
         } else {
-          projectDivs.forEach((div) => div.classList.remove('sticky'));
+          projectDivs.forEach((div) => div.classList.remove("sticky"));
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener("scroll", handleScroll);
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener("scroll", handleScroll);
       };
     }, []);
 
@@ -319,16 +332,16 @@ export default function Homepage() {
           loop={0}
           direction="left"
         >
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
-          <FaStarOfLife /> &nbsp; Projects &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp;
         </Marquee>
 
-        <div className="projectdiv projectdiv1">
+        {/* <div className="projectdiv projectdiv1">
           <div className="projectcardhead">
             <div className="sno">1.</div>
             <div className="projectcardtags">
@@ -345,7 +358,7 @@ export default function Homepage() {
               your fingertips!
             </div>
           </div>
-          <Link className="projectvisitbutton linkstyle" to={'/projects/livit'}>
+          <Link className="projectvisitbutton linkstyle" to={"/projects/livit"}>
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
             </div>
@@ -370,7 +383,7 @@ export default function Homepage() {
               intuitive dashboard for URL management and click analytics.
             </div>
           </div>
-          <Link className="projectvisitbutton linkstyle" to={'/projects/blink'}>
+          <Link className="projectvisitbutton linkstyle" to={"/projects/blink"}>
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
             </div>
@@ -396,7 +409,7 @@ export default function Homepage() {
           </div>
           <Link
             className="projectvisitbutton linkstyle"
-            to={'/projects/newsmann'}
+            to={"/projects/newsmann"}
           >
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
@@ -422,7 +435,7 @@ export default function Homepage() {
           </div>
           <Link
             className="projectvisitbutton linkstyle"
-            to={'/projects/spennd'}
+            to={"/projects/spennd"}
           >
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
@@ -449,7 +462,7 @@ export default function Homepage() {
           </div>
           <Link
             className="projectvisitbutton linkstyle"
-            to={'/projects/tripster'}
+            to={"/projects/tripster"}
           >
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
@@ -476,7 +489,7 @@ export default function Homepage() {
           </div>
           <Link
             className="projectvisitbutton linkstyle"
-            to={'/projects/automate'}
+            to={"/projects/automate"}
           >
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
@@ -504,7 +517,7 @@ export default function Homepage() {
           </div>
           <Link
             className="projectvisitbutton linkstyle"
-            to={'/projects/superbill'}
+            to={"/projects/superbill"}
           >
             <div className="projectvisitbutton">
               <div className="visitbutton">View Project</div>
@@ -512,13 +525,13 @@ export default function Homepage() {
           </Link>
         </div>
         <div className="allprojectsbutton">
-          <Link to={'/projects'} className="linkstyle">
+          <Link to={"/projects"} className="linkstyle">
             <div className="resumebutton">
               <div className="circlebutton"></div>
               <div className="buttonhead">All Projects</div>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     );
   }
@@ -535,27 +548,27 @@ export default function Homepage() {
         >
           {[...Array(8)].map((_, i) => (
             <React.Fragment key={i}>
-              <FaStarOfLife /> &nbsp; Techstack &nbsp;
+              <ImSpades /> &nbsp; Techstack &nbsp;
             </React.Fragment>
           ))}
         </Marquee>
 
         <div className="skillsectiondiv">
           <div className="skillcarddiv">
-            <SkillCard imgsrc={'reactjs.png'} skilltag={'React JS'} />
-            <SkillCard imgsrc={'NEXTJS.png'} skilltag={'Next JS'} />
-            <SkillCard imgsrc={'nodejs.png'} skilltag={'Node JS'} />
-            <SkillCard imgsrc={'expressjs.png'} skilltag={'Express JS'} />
-            <SkillCard imgsrc={'javascript.png'} skilltag={'Javascript'} />
-            <SkillCard imgsrc={'typescript.png'} skilltag={'Typescript'} />
-            <SkillCard imgsrc={'java.png'} skilltag={'Java'} />
-            <SkillCard imgsrc={'dart.png'} skilltag={'Dart'} />
-            <SkillCard imgsrc={'python.png'} skilltag={'Python'} />
-            <SkillCard imgsrc={'git.png'} skilltag={'Git'} />
-            <SkillCard imgsrc={'github.png'} skilltag={'Github'} />
-            <SkillCard imgsrc={'flutter.png'} skilltag={'Flutter'} />
-            <SkillCard imgsrc={'firebase.png'} skilltag={'Firebase'} />
-            <SkillCard imgsrc={'docker.png'} skilltag={'Docker'} />
+            <SkillCard imgsrc={"reactjs.png"} skilltag={"React JS"} />
+            <SkillCard imgsrc={"NEXTJS.png"} skilltag={"Next JS"} />
+            <SkillCard imgsrc={"nodejs.png"} skilltag={"Node JS"} />
+            <SkillCard imgsrc={"expressjs.png"} skilltag={"Express JS"} />
+            <SkillCard imgsrc={"javascript.png"} skilltag={"Javascript"} />
+            <SkillCard imgsrc={"typescript.png"} skilltag={"Typescript"} />
+            <SkillCard imgsrc={"java.png"} skilltag={"Java"} />
+            <SkillCard imgsrc={"dart.png"} skilltag={"Dart"} />
+            <SkillCard imgsrc={"python.png"} skilltag={"Python"} />
+            <SkillCard imgsrc={"git.png"} skilltag={"Git"} />
+            <SkillCard imgsrc={"github.png"} skilltag={"Github"} />
+            <SkillCard imgsrc={"flutter.png"} skilltag={"Flutter"} />
+            <SkillCard imgsrc={"firebase.png"} skilltag={"Firebase"} />
+            <SkillCard imgsrc={"docker.png"} skilltag={"Docker"} />
           </div>
         </div>
       </div>
@@ -618,13 +631,13 @@ export default function Homepage() {
           loop={0}
           direction="left"
         >
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
-          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
+          <ImSpades /> &nbsp; Education &nbsp;
         </Marquee>
         <div className="educationsection">
           <div className="educationcard">
@@ -668,13 +681,13 @@ export default function Homepage() {
           loop={0}
           direction="left"
         >
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
-          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
+          <ImSpades /> &nbsp; Experience &nbsp;
         </Marquee>
         <div className="educationsection">
           <div className="educationcard">
@@ -761,13 +774,13 @@ export default function Homepage() {
           loop={0}
           direction="left"
         >
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
-          <FaStarOfLife /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
+          <ImSpades /> &nbsp; Achievements &nbsp;
         </Marquee>
         <div className="educationsection">
           <div className="educationcard">
@@ -829,7 +842,7 @@ export default function Homepage() {
                   target="_blank"
                   className="certlink"
                 >
-                  <img src="/link.png" alt="Link" className="linkimg" />{' '}
+                  <img src="/link.png" alt="Link" className="linkimg" />{" "}
                 </a>
               </div>
             </div>
@@ -855,8 +868,123 @@ export default function Homepage() {
                   target="_blank"
                   className="certlink"
                 >
-                  <img src="/link.png" alt="Link" className="linkimg" />{' '}
+                  <img src="/link.png" alt="Link" className="linkimg" />{" "}
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function Page11() {
+    return (
+      <div className="page11">
+        <Marquee
+          className="aboutmemarquee"
+          speed={40}
+          autoFill={true}
+          loop={0}
+          direction="left"
+        >
+          <ImSpades /> &nbsp; Dynasty Overview &nbsp; <ImSpades /> &nbsp;
+          Dynasty Overview &nbsp; <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+        </Marquee>
+
+        <div className="page11content">
+          <div className="quotesGrid">
+            <div className="quoteCard">
+              <div className="quoteIndex">1</div>
+              <div className="quoteTitle">Origin</div>
+              <div className="quoteBody">
+                Formed in an unforgiving frozen realm, the Glacial Dynasty
+                emerged when survival demanded intelligence, planning, and
+                restraint over brute force.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">2</div>
+              <div className="quoteTitle">Belief System</div>
+              <div className="quoteBody">
+                Power is earned through foresight and discipline. The dynasty
+                believes control, order, and wisdom sustain civilizations longer
+                than chaos or emotion.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">3</div>
+              <div className="quoteTitle">Emblem — The Spade</div>
+              <div className="quoteBody">
+                The Spade represents authority, law, and calculated dominance.
+                It symbolizes leadership built on intellect and decisive
+                governance.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">4</div>
+              <div className="quoteTitle">Realm & Environment</div>
+              <div className="quoteBody">
+                A vast glacial land of ice plains and frozen strongholds where
+                harsh climate shapes resilience, unity, and strategic living.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">5</div>
+              <div className="quoteTitle">Governance & Laws</div>
+              <div className="quoteBody">
+                Governed by strict codes and structured hierarchy. Laws
+                prioritize stability, loyalty, and long-term vision over
+                impulsive action.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">6</div>
+              <div className="quoteTitle">Ruler</div>
+              <div className="quoteBody">
+                Faisal — The Strategist King. A ruler chosen for intellect and
+                foresight, guiding the dynasty through calculated decisions and
+                unwavering control.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">7</div>
+              <div className="quoteTitle">Culture & Practices</div>
+              <div className="quoteBody">
+                Minimalistic, disciplined, and symbolic. Architecture, attire,
+                and rituals reflect precision, silence, and authority.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">8</div>
+              <div className="quoteTitle">Warfare Strategy</div>
+              <div className="quoteBody">
+                Victory through planning, patience, and terrain mastery. Battles
+                are calculated, not rushed — every move intentional.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">9</div>
+              <div className="quoteTitle">Currency</div>
+              <div className="quoteBody">
+                Coins forged with the Spade insignia, symbolizing trust,
+                authority, and the weight of governance.
+              </div>
+            </div>
+
+            <div className="quoteCard">
+              <div className="quoteIndex">10</div>
+              <div className="quoteTitle">Identity</div>
+              <div className="quoteBody">
+                A dynasty that does not shout its power — it executes it.
               </div>
             </div>
           </div>
@@ -869,7 +997,7 @@ export default function Homepage() {
     return (
       <div className="page9">
         <div className="page9head">Intersted in Working Together?</div>
-        <Link to={'/contacts'} className="linkstyle">
+        <Link to={"/contacts"} className="linkstyle">
           <div className="resumebutton">
             <div className="circlebutton"></div>
             <div className="buttonhead">Drop Me a Mail</div>

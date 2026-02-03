@@ -1,229 +1,141 @@
-import Marquee from 'react-fast-marquee';
-import { Helmet } from 'react-helmet';
+import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet";
+import { ImSpades } from "react-icons/im";
 export default function AboutPage() {
   return (
     <div className="aboutpage">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>
-          About Me | Abhishek Jain's Portfolio | Web Developer | Cross Platform
-          Application Developer
-        </title>
+        <title>About Orexis</title>
       </Helmet>
       <div className="projectpage1">
         <div className="projectpage1head">
           <div className="head">
             <div className="projectcircle"></div>
-            <div className="projectheadcontent">About Me</div>
+            <div className="projectheadcontent">About Orexis</div>
           </div>
           <div className="projectsubhead">
-            I was born and raised in a small town in Central India, and now I’m
-            living in Vellore, where I’m pursuing a BTech in Electronics and
-            Communication Engineering at VIT. Alongside my studies, I’m the
-            founder of Automate Vellore, a platform for seamless autorickshaw
-            booking. I’m also a full-stack web and app developer, API creator,
-            and open-source contributor.
+            Born in a frozen world where weakness is erased, the Glacial Dynasty
+            governs through structure, strategy, and control. Every tradition,
+            law, and symbol reflects discipline shaped by survival. The Spade
+            embodies a ruling ideology where power is earned, loyalty is
+            absolute, and silence speaks louder than chaos.
           </div>
         </div>
       </div>
-      <div className="aboutpage2">
-        <div className="whatidobanner">
-          <div className="whatidohead">
-            <div className="whatidocircle"></div>
-            <div className="whatidoheadcontent">What I Do?</div>
-          </div>
-          <div className="whatidocontent">
-            "I’m a seasoned web and cross-platform app developer with three
-            years of hands-on experience, currently advancing my skills through
-            a B.Tech in ECE Engineering from VIT Vellore. My passion for
-            storytelling, human-centered design, and backend development fuels
-            my exploration of innovative strategies for brands to engage
-            effectively with their audiences. With expertise in API creation and
-            database management, I thrive on pushing creative boundaries and
-            delivering exceptional user experiences."
-          </div>
-        </div>
-      </div>
-      <div className="aboutpage3">
-        <div className="whatidohead exphead">
-          <div className="whatidocircle"></div>
-          <div className="whatidoheadcontent">My Experience</div>
-        </div>
-        <div className="educationsection">
-          <div className="educationcard">
-            <div className="educationimage img3"></div>
-            <div className="educationdetails">
-              <div className="educationhead">Automate Vellore</div>
-              <div className="educationcollege">April 2023 - Present</div>
-              <div className="educationcollege">
-                Developed a platform from which Autorickshaws can be booked
-                effortlessly in vellore. Reducing the standard Fares by 30% in
-                Vellore. Providing Employement to More than 20 Autodrivers.
-              </div>
-              <div className="educationsession">Founder | CTO</div>
-            </div>
-          </div>
-          <div className="educationcard">
-            <div className="educationimage img4"></div>
-            <div className="educationdetails">
-              <div className="educationhead">Solero Ceramics</div>
-              <div className="educationcollege">Jun 2024 - July 2024</div>
-              <div className="educationcollege">
-                Developed the Offical Page for the Creamic Tiles Manufacturing
-                Company Based in Gujarat, India. Showcasing Their Products
-                ,Catalogues and Manufacturing Facilitie Present in Gujarat.
-              </div>
-              <div className="educationsession">
-                Full Stack Website Developer
-              </div>
-            </div>
-          </div>
-          <div className="educationcard">
-            <div className="educationimage img6"></div>
-            <div className="educationdetails">
-              <div className="educationhead">Studize</div>
-              <div className="educationcollege">Feb 2024 - March 2024</div>
-              <div className="educationcollege">
-                Developed Some Crucial Features of the App such as Syllabus
-                Tracking System , Dynamic Notification System , Integrated a
-                Fully Functional Chatbot. Contributing to almost 50% of the
-                Complete Application and increasing the Team Efficiency by 30%
-              </div>
-              <div className="educationsession">
-                Cross Platform App Developer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="aboutpage3">
-        <div className="whatidohead exphead">
-          <div className="whatidocircle"></div>
-          <div className="whatidoheadcontent">My Achivements</div>
-        </div>
-        <div className="educationsection">
-          <div className="educationcard">
-            <div className="educationimage imgach1"></div>
-            <div className="educationdetails">
-              <div className="educationhead">
-                App Dev Hackathon - First Position
-              </div>
-              <div className="educationcollege">
-                Organized by MeitY, Govt. of India at VIT Vellore
-              </div>
-              <div className="educationcollege">
-                Secured 1st position in a prestigious hackathon organized by
-                MeitY, Govt. of India. Developed a full-fledged Event Management
-                System that streamlined event registrations and operations. The
-                award was presented by the CEO of MeitY, with Institute
-                Innovation Council, VIT Vellore as the co-organizer.
-              </div>
-              <div className="educationsession"></div>
+      <Page11 />
+    </div>
+  );
+}
+
+function Page11() {
+  return (
+    <div className="page11">
+      <Marquee
+        className="aboutmemarquee"
+        speed={40}
+        autoFill={true}
+        loop={0}
+        direction="left"
+      >
+        <ImSpades /> &nbsp; Dynasty Overview &nbsp; <ImSpades /> &nbsp; Dynasty
+        Overview &nbsp; <ImSpades /> &nbsp; Dynasty Overview &nbsp;
+      </Marquee>
+
+      <div className="page11content">
+        <div className="quotesGrid">
+          <div className="quoteCard">
+            <div className="quoteIndex">1</div>
+            <div className="quoteTitle">Origin</div>
+            <div className="quoteBody">
+              Formed in an unforgiving frozen realm, the Glacial Dynasty emerged
+              when survival demanded intelligence, planning, and restraint over
+              brute force.
             </div>
           </div>
 
-          <div className="educationcard">
-            <div className="educationimage imgach2"></div>
-            <div className="educationdetails">
-              <div className="educationhead">Hackoff V4.0 – 2nd Position</div>
-              <div className="educationcollege">
-                Pan-India Hackathon | IET, VIT Vellore
-              </div>
-              <div className="educationcollege">
-                Secured 2nd place in the prestigious Pan-India Hackathon,
-                Hackoff V4.0, organized by the Institute of Engineering and
-                Technology, VIT Vellore. Developed a full-stack Education
-                Companion Platform for mentorship, enabling seamless
-                mentor-student connections, personalized learning, and guidance.
-              </div>
-              <div className="educationsession">
-                <a
-                  href="https://drive.google.com/file/d/1x7gnARA8iABgnyGjnnU9Mnf5CJ7T2ZmA/view"
-                  target="_blank"
-                  className="certlink"
-                >
-                  <img src="/link.png" alt="Link" className="linkimg" />{' '}
-                </a>
-              </div>
+          <div className="quoteCard">
+            <div className="quoteIndex">2</div>
+            <div className="quoteTitle">Belief System</div>
+            <div className="quoteBody">
+              Power is earned through foresight and discipline. The dynasty
+              believes control, order, and wisdom sustain civilizations longer
+              than chaos or emotion.
             </div>
           </div>
 
-          <div className="educationcard">
-            <div className="educationimage imgach3"></div>
-            <div className="educationdetails">
-              <div className="educationhead">Relay Coding – 1st Position</div>
-              <div className="educationcollege">
-                Institute of Engineering and Technology, VIT Vellore
-              </div>
-              <div className="educationcollege">
-                Secured 1st place in the Relay Coding competition organized by
-                the Institute of Engineering and Technology, VIT Vellore.
-                Developed a **Student Community Platform** where students can
-                create **study groups**, collaborate, and organize meetups for
-                group study sessions, enhancing peer learning and academic
-                engagement.
-              </div>
-              <div className="educationsession">
-                <a
-                  href="https://drive.google.com/file/d/1tRSRfv_73Z0H1a2FatCbzYDD2nlod3jf/view"
-                  target="_blank"
-                  className="certlink"
-                >
-                  <img src="/link.png" alt="Link" className="linkimg" />{' '}
-                </a>
-              </div>
+          <div className="quoteCard">
+            <div className="quoteIndex">3</div>
+            <div className="quoteTitle">Emblem — The Spade</div>
+            <div className="quoteBody">
+              The Spade represents authority, law, and calculated dominance. It
+              symbolizes leadership built on intellect and decisive governance.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">4</div>
+            <div className="quoteTitle">Realm & Environment</div>
+            <div className="quoteBody">
+              A vast glacial land of ice plains and frozen strongholds where
+              harsh climate shapes resilience, unity, and strategic living.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">5</div>
+            <div className="quoteTitle">Governance & Laws</div>
+            <div className="quoteBody">
+              Governed by strict codes and structured hierarchy. Laws prioritize
+              stability, loyalty, and long-term vision over impulsive action.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">6</div>
+            <div className="quoteTitle">Ruler</div>
+            <div className="quoteBody">
+              Faisal — The Strategist King. A ruler chosen for intellect and
+              foresight, guiding the dynasty through calculated decisions and
+              unwavering control.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">7</div>
+            <div className="quoteTitle">Culture & Practices</div>
+            <div className="quoteBody">
+              Minimalistic, disciplined, and symbolic. Architecture, attire, and
+              rituals reflect precision, silence, and authority.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">8</div>
+            <div className="quoteTitle">Warfare Strategy</div>
+            <div className="quoteBody">
+              Victory through planning, patience, and terrain mastery. Battles
+              are calculated, not rushed — every move intentional.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">9</div>
+            <div className="quoteTitle">Currency</div>
+            <div className="quoteBody">
+              Coins forged with the Spade insignia, symbolizing trust,
+              authority, and the weight of governance.
+            </div>
+          </div>
+
+          <div className="quoteCard">
+            <div className="quoteIndex">10</div>
+            <div className="quoteTitle">Identity</div>
+            <div className="quoteBody">
+              A dynasty that does not shout its power — it executes it.
             </div>
           </div>
         </div>
-      </div>
-      <div className="lastpage">
-        <Marquee
-          className="aboutmemarquee aboutmarq"
-          speed={40}
-          autoFill={true}
-          loop={0}
-          direction="right"
-        >
-          <img src="reactjs.png" alt="" className="skillimage marqimg" />
-          <img src="NEXTJS.png" alt="" className="skillimage marqimg" />
-          <img src="nodejs.png.png" alt="" className="skillimage marqimg" />
-          <img src="javascript.png" alt="" className="skillimage marqimg" />
-          <img src="typescript.png" alt="" className="skillimage marqimg" />
-          <img src="java.png" alt="" className="skillimage marqimg" />
-          <img src="dart.png" alt="" className="skillimage marqimg" />
-          <img src="python.png" alt="" className="skillimage marqimg" />
-          <img src="git.png" alt="" className="skillimage marqimg" />
-          <img src="github.png" alt="" className="skillimage marqimg" />
-          <img src="flutter.png" alt="" className="skillimage marqimg" />
-          <img src="firebase.png" alt="" className="skillimage marqimg" />
-          <img src="docker.png" alt="" className="skillimage marqimg" />
-          <img src="reactjs.png" alt="" className="skillimage marqimg" />
-          <img src="NEXTJS.png" alt="" className="skillimage marqimg" />
-          <img src="nodejs.png.png" alt="" className="skillimage marqimg" />
-          <img src="javascript.png" alt="" className="skillimage marqimg" />
-          <img src="typescript.png" alt="" className="skillimage marqimg" />
-          <img src="java.png" alt="" className="skillimage marqimg" />
-          <img src="dart.png" alt="" className="skillimage marqimg" />
-          <img src="python.png" alt="" className="skillimage marqimg" />
-          <img src="git.png" alt="" className="skillimage marqimg" />
-          <img src="github.png" alt="" className="skillimage marqimg" />
-          <img src="flutter.png" alt="" className="skillimage marqimg" />
-          <img src="firebase.png" alt="" className="skillimage marqimg" />
-          <img src="docker.png" alt="" className="skillimage marqimg" />
-          <img src="reactjs.png" alt="" className="skillimage marqimg" />
-          <img src="NEXTJS.png" alt="" className="skillimage marqimg" />
-          <img src="nodejs.png.png" alt="" className="skillimage marqimg" />
-          <img src="javascript.png" alt="" className="skillimage marqimg" />
-          <img src="typescript.png" alt="" className="skillimage marqimg" />
-          <img src="java.png" alt="" className="skillimage marqimg" />
-          <img src="dart.png" alt="" className="skillimage marqimg" />
-          <img src="python.png" alt="" className="skillimage marqimg" />
-          <img src="git.png" alt="" className="skillimage marqimg" />
-          <img src="github.png" alt="" className="skillimage marqimg" />
-          <img src="flutter.png" alt="" className="skillimage marqimg" />
-          <img src="firebase.png" alt="" className="skillimage marqimg" />
-          <img src="docker.png" alt="" className="skillimage marqimg" />
-        </Marquee>
       </div>
     </div>
   );
