@@ -286,7 +286,9 @@ body {
   align-items: center;
 }
 .respheaderimg {
-  width: 100px;
+  width: 50px;
+  margin-right: 20px;
+  filter: invert(1);
 }
 .respheadertag {
   color: white;

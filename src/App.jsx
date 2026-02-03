@@ -107,7 +107,7 @@ export default function App() {
           </div>
           <div className="topheadrespmenu">
             <img
-              src="/finallogo2removedbg.png"
+              src="/OREXIS-01.png"
               alt="headerlogo"
               className="respheaderimg"
             />
